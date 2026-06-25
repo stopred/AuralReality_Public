@@ -8,4 +8,4 @@
 audio), 비공개 runtime code, 실서비스 인프라 인증 정보(live infrastructure
 credential), 배포 세부 정보(production deployment detail)는 포함하지 않습니다.
 
-Copyright DecaTree Studio / Aural Reality 창업자. 모든 권리 보유.
+Copyright Aural Reality 창업자. 모든 권리 보유.

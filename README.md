@@ -151,6 +151,6 @@ Aural Reality는 **비공개 테스트 검증 단계(private test validation sta
 
 ## 라이선스 / 권리
 
-현재 오픈소스 라이선스를 부여하지 않습니다. 모든 권리는 DecaTree Studio /
-Aural Reality 창업자에게 있습니다. 공개 예제는 리뷰와 논의를 위한 참고 자료로만
+현재 오픈소스 라이선스를 부여하지 않습니다. 모든 권리는 Aural Reality 창업자에게
+있습니다. 공개 예제는 리뷰와 논의를 위한 참고 자료로만
 제공됩니다.

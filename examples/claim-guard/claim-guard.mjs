@@ -37,7 +37,7 @@ export function scanPublicEvidence(value, path = "evidence") {
           issues.push({
             path: nextPath,
             code: "FORBIDDEN_PUBLIC_CLAIM",
-            message: `${key} must not be true in public-safe evidence.`,
+            message: `${key}는 public-safe evidence에서 true가 될 수 없습니다.`,
           });
         }
         visit(child, nextPath);
@@ -51,7 +51,7 @@ export function scanPublicEvidence(value, path = "evidence") {
           issues.push({
             path: currentPath,
             code: "SECRET_OR_PRIVATE_MATERIAL",
-            message: "Public evidence contains token, signed URL, secret, or raw coordinate-like material.",
+            message: "Public evidence에 token, signed URL, secret, raw coordinate-like material이 포함되어 있습니다.",
           });
           break;
         }

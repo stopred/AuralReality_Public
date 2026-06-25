@@ -1,4 +1,4 @@
-name: Verify Public Evidence Channel
+name: 공개 증거 채널 검증
 
 on:
   push:
@@ -9,16 +9,16 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: 저장소 체크아웃
         uses: actions/checkout@v5
 
-      - name: Set up Node.js
+      - name: Node.js 설정
         uses: actions/setup-node@v5
         with:
           node-version: "24"
 
-      - name: Print runtime
+      - name: runtime 버전 출력
         run: node --version
 
-      - name: Verify examples
+      - name: 공개 예제 검증
         run: npm run verify

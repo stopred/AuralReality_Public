@@ -7,7 +7,7 @@ import {
 } from "../examples/context-runtime/context-engine.mjs";
 import { scanPublicEvidence } from "../examples/claim-guard/claim-guard.mjs";
 
-test("zone hysteresis waits for stable enter samples", () => {
+test("zone hysteresis는 안정적인 enter sample을 기다린다", () => {
   const result = evaluateZoneHysteresis({
     previousZoneId: null,
     zones: [{ id: "z1", center: { x: 0, y: 0 }, enterRadiusMeters: 10 }],
@@ -23,7 +23,7 @@ test("zone hysteresis waits for stable enter samples", () => {
   assert.equal(result.zoneId, null);
 });
 
-test("zone hysteresis keeps current zone inside exit buffer", () => {
+test("zone hysteresis는 exit buffer 안에서 현재 zone을 유지한다", () => {
   const result = evaluateZoneHysteresis({
     previousZoneId: "z1",
     zones: [{ id: "z1", center: { x: 0, y: 0 }, enterRadiusMeters: 10 }],
@@ -40,7 +40,7 @@ test("zone hysteresis keeps current zone inside exit buffer", () => {
   assert.equal(result.zoneId, "z1");
 });
 
-test("audio plan stays blocked when weather gate is closed", () => {
+test("weather gate가 닫혀 있으면 audio plan은 blocked 상태를 유지한다", () => {
   const result = planAudioLayers({
     zoneState: { zoneId: "z1", status: "entered" },
     weatherGate: { allowed: false, reason: "not_rain" },
@@ -53,7 +53,7 @@ test("audio plan stays blocked when weather gate is closed", () => {
   assert.equal(result.claims.launchReady, false);
 });
 
-test("public demo output contains no forbidden public claims", () => {
+test("public demo output에는 금지된 public claim이 없다", () => {
   const result = runContextRuntimeDemo({
     previousZoneId: null,
     zones: [{ id: "z1", center: { x: 0, y: 0 }, enterRadiusMeters: 10 }],

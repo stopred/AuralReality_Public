@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { scanPublicEvidence } from "../examples/claim-guard/claim-guard.mjs";
 
-test("claim guard rejects premature launch-ready claims", () => {
+test("claim guard는 성급한 launch-ready claim을 거부한다", () => {
   const result = scanPublicEvidence({
     launchReady: true,
   });
@@ -11,7 +11,7 @@ test("claim guard rejects premature launch-ready claims", () => {
   assert.equal(result.issues[0].code, "FORBIDDEN_PUBLIC_CLAIM");
 });
 
-test("claim guard rejects token-like material", () => {
+test("claim guard는 token-like material을 거부한다", () => {
   const result = scanPublicEvidence({
     logLine: "Authorization: Bearer abcdefghijklmnop",
   });
@@ -20,7 +20,7 @@ test("claim guard rejects token-like material", () => {
   assert.equal(result.issues[0].code, "SECRET_OR_PRIVATE_MATERIAL");
 });
 
-test("claim guard accepts public-safe negative flags", () => {
+test("claim guard는 public-safe negative flag를 허용한다", () => {
   const result = scanPublicEvidence({
     launchReady: false,
     nativePlaybackAccepted: false,

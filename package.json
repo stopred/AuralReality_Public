@@ -1,0 +1,13 @@
+{
+  "name": "aural-reality-public-evidence",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public-safe evidence channel for Aural Reality SparkClaw review.",
+  "type": "module",
+  "scripts": {
+    "demo": "node examples/run-public-demo.mjs",
+    "test": "node --test",
+    "verify": "npm test && npm run demo"
+  },
+  "license": "UNLICENSED"
+}

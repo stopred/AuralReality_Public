@@ -140,7 +140,7 @@ npm run verify
 Aural Reality는 **비공개 테스트 검증 단계(private test validation stage)**에 있습니다.
 
 현재 목표는 public launch를 주장하는 것이 아닙니다. 비공개 테스트 참여자를
-섭외해, 첫 작품인 `rain_comfort_walk` / "비가 열리는 7분"이 실제 장소를 다르게
+섭외해, 첫 작품인 `rain_comfort_walk` / "비가 열리는 5분"이 실제 장소를 다르게
 들리게 만들 수 있는지 통제된 조건에서 안전하고 측정 가능한 방식으로 검증하는
 것입니다.
 
